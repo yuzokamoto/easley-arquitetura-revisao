@@ -1,3 +1,4 @@
+// tipagem da tabela users
 export interface UserDB {
   id: string,
   name: string,
@@ -6,11 +7,13 @@ export interface UserDB {
   created_at: string
 }
 
+// tipagem da tabela users_addresses
 export interface UserAddressDB {
   user_id: string,
   address: string
 }
 
+// tipagem da entidade no formato que o front-end irá receber/enviar para nossa API
 export interface UserModel {
   id: string,
   name: string,
